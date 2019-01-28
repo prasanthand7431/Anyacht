@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".activity.LoginActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_l121"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/realative_l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear_l22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear_l11"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_title_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Search Yacht"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/realtive_anyacht"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/realative_l1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp">
+
+                <LinearLayout
+                    android:id="@+id/linear_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_spin"
+                    android:orientation="horizontal">
+
+              <Spinner
+                  android:id="@+id/spin_destination"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp">
+
+              </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_radio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear_auto"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/radiogroups"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/radioss1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:text="@string/radio1"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/radioss2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:buttonTint="@color/white"
+                            android:text="@string/radio2"
+                            android:textColor="@color/white" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_checkin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/linear_radio1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txt_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/layout_bg"
+                        android:drawableLeft="@drawable/ic_baseline_today_24px"
+                        android:drawablePadding="10dp"
+                        android:hint="Check In"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColor="@color/white"
+                        android:paddingLeft="16dip"
+                        android:paddingRight="16dip"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_checkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/linear_checkin"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txt_date_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/layout_bg"
+                        android:drawableLeft="@drawable/ic_baseline_today_24px"
+                        android:drawablePadding="10dp"
+                        android:hint="Check Out"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textColor="@color/white"
+                        android:paddingLeft="16dip"
+                        android:paddingRight="16dip"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_spiner"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/linear_checkout"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/custom_spin"
+                    android:orientation="horizontal"
+                    android:layout_height="45dp">
+
+                    <Spinner
+                        android:id="@+id/spin"
+                        android:layout_width="match_parent"
+                        android:entries="@array/hours"
+                        android:layout_height="40dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/search_btnn"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/linear_spiner"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_search"
+                        android:text="Search"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/custom_layout"
+                        android:layout_height="45dp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

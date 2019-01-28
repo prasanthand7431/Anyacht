@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/ic_bg"
+    android:layout_height="match_parent">
+
+
+   <RelativeLayout
+       android:id="@+id/relative_splash"
+       android:layout_width="match_parent"
+       android:layout_marginTop="30dp"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:id="@+id/l1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/t1"
+               android:layout_width="match_parent"
+               android:text="ANYACHT"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:gravity="center"
+               android:textSize="22dp"
+               android:layout_height="match_parent" />
+
+       </LinearLayout>
+
+
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_below="@+id/relative_splash"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_login_btn"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnn_login"
+                android:layout_width="match_parent"
+                android:text="Login"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/custom_layout"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_signup_btn"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/linear_login_btn"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnn_signup"
+                android:layout_width="match_parent"
+                android:text="Sign Up"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_bg_blue"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".activity.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/realative_l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_top"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:theme="@style/AppTheme" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ANYACHT"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id="@+id/linear_l22"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar_top"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_title_login"
+                android:textColor="@color/white"
+                android:text="LOGIN"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realtive_anyacht"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/realative_l1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_username"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:hint="@string/hint_email"
+                    android:drawableLeft="@drawable/ic_baseline_perm_identity_24px"
+                    android:inputType="text"
+                     />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_pass"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear_username"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24px"
+                    android:inputType="textPassword"
+                    android:hint="@string/hint_pass" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_login"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linear_pass"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:text="Login"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_layout"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_forgorpass"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linear_login"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_forgorpass"
+                android:layout_width="match_parent"
+                android:text="Forgot Password ?"
+                android:gravity="center"
+                android:background="@drawable/ripple_effect"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

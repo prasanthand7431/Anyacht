@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".activity.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/realative_l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_l11"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:text="ANYACHT"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realtive_anyacht"
+        android:layout_width="match_parent"
+        android:gravity="top"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/realative_l1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_username"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/change_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/white"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24px"
+                    android:inputType="text"
+                    android:hint="@string/hint_oldpass" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_pass"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear_username"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/comfirm_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24px"
+                    android:inputType="textPassword"
+                    android:hint="@string/hint_newpass" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_login"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linear_pass"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/comfirm_pass_btn"
+                android:text="Submit"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_layout"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

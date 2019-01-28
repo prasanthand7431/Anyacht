@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/header_bookhistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TableRow
+            android:id="@+id/t1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Yacht Name"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/TextView011"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=":"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_yacht_name"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/t2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Maximum People"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/TextView022"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=":"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_yachtpeople"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/t3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t2"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Price"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/TextView033"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=":"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txt_yachtprice"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/t4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t3"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Check In Date"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/TextView055"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=":"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_checkin"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/t5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t4"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Check Out Date"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/TextView066"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=":"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_checkout"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/t6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t5"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/TextView08"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Payment Status"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/TextView077"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=":"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_paystatus"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:text=""
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/line"
+            android:layout_below="@+id/t6"
+            android:background="@color/white"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_height="1dp">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="bg_dest_box">#1a2eb1</color>
+    <color name="colorAccent">#d71c96</color>
+    <color name="blue">#2342c1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#ec974d</color>
+    <color name="light_gray">#f5f5f5</color>
+
+    <color name="red">#d41414</color>
+    <color name="green">#0d7323</color>
+</resources>
